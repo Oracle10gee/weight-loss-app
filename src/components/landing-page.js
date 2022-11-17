@@ -99,7 +99,7 @@ const LandingPage = () => {
         <div className="content-2 d-flex mt-5">
           <div
             className="myDIV shadow-sm p-3 mb-5 bg-white d-flex"
-            style={{ borderRadius: 30, width: "120%" }}
+            style={{ borderRadius: 30, width: "120%", backgroundColor: "#fff" }}
           >
             <div style={{ color: "#7B66FF" }}>
               <AiOutlineFire size={25} className="mt-3" />
@@ -114,7 +114,7 @@ const LandingPage = () => {
           </div>
           <div
             className="myDIV mx-2 shadow-sm p-3 mb-5 bg-white d-flex"
-            style={{ borderRadius: 30, width: "120%" }}
+            style={{ borderRadius: 30, width: "120%", backgroundColor: "#fff" }}
           >
             <div style={{ color: "#7B66FF" }}>
               <RiFootprintLine size={25} className="mt-3" />
@@ -190,7 +190,7 @@ const LandingPage = () => {
             </div>
           </div>
           <Card
-            className="p-3 shadow p-3 mb-5 bg-white"
+            className="p-3 shadow-sm p-3 bg-white"
             style={{ borderRadius: 20 }}
           >
             <Row>
@@ -213,9 +213,7 @@ const LandingPage = () => {
           </Card>
         </div>
       </div>
-      <Button className="btn" color="primary" onClick={toggle}>
-        <AiOutlinePlus size={30}/>
-      </Button>
+
       <Modal
         isOpen={modal}
         toggle={toggle}
@@ -272,7 +270,14 @@ const LandingPage = () => {
           </div>
         </ModalBody>
       </Modal>
-      <NavBar className="test" />
+      <div>
+        <div className="parent">
+          <Button className="btn" color="primary" onClick={toggle}>
+            <AiOutlinePlus size={30} />
+          </Button>
+        </div>
+        <NavBar className="nav" />
+      </div>
     </div>
   );
 };
