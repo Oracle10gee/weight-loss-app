@@ -4,17 +4,12 @@ import { AiOutlineFire } from "react-icons/ai";
 import { RiFootprintLine } from "react-icons/ri";
 import { IoIosBicycle } from "react-icons/io";
 import { BsPlayCircle } from "react-icons/bs";
-import { RiHeartPulseLine } from "react-icons/ri";
-import { TbReportMedical } from "react-icons/tb";
-import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { AiOutlinePlus } from "react-icons/ai";
+import ModalHandle from "../utils/modal";
 import {
   BarChart,
   Bar,
-  Cell,
   XAxis,
-  YAxis,
-  CartesianGrid,
   Tooltip,
   Legend,
   ResponsiveContainer,
@@ -24,13 +19,9 @@ import {
   Col,
   Button,
   Card,
-  CardBody,
   Progress,
   Modal,
-  ModalFooter,
-  ModalHeader,
-  ModalBody,
-} from "reactstrap";
+  } from "reactstrap";
 import NavBar from "./navbar";
 
 const LandingPage = () => {
@@ -217,62 +208,15 @@ const LandingPage = () => {
       <Modal
         isOpen={modal}
         toggle={toggle}
-        modalTransition={{ timeout: 1000 }}
+        modalTransition={{ timeout: 100 }}
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        <ModalBody className="p-4">
-          <div>
-            <Card
-              className="p-3 shadow p-3 mb-3 bg-white"
-              style={{ borderRadius: 20 }}
-            >
-              <p>
-                <RiHeartPulseLine size={25} style={{ color: "#7B66FF" }} />
-                <span className="mx-2" style={{ fontWeight: 600 }}>
-                  Add blood pressure
-                </span>
-              </p>
-            </Card>
-            <Card
-              className="p-3 shadow p-3 mb-3 bg-white"
-              style={{ borderRadius: 20 }}
-            >
-              <p>
-                <TbReportMedical size={25} style={{ color: "#7B66FF" }} />
-                <span className="mx-2" style={{ fontWeight: 600 }}>
-                  Add weight measurement
-                </span>
-              </p>
-            </Card>
-            <Card
-              className="p-3 shadow p-3 mb-3 bg-white"
-              style={{ borderRadius: 20 }}
-            >
-              <p>
-                <IoIosBicycle size={25} style={{ color: "#7B66FF" }} />
-                <span className="mx-2" style={{ fontWeight: 600 }}>
-                  Add Activity
-                </span>
-              </p>
-            </Card>
-            <Card
-              className="p-3 shadow p-3 mb-3 bg-white"
-              style={{ borderRadius: 20 }}
-            >
-              <p>
-                <TfiHeadphoneAlt size={25} style={{ color: "#7B66FF" }} />
-                <span className="mx-2" style={{ fontWeight: 600 }}>
-                  Track my workout
-                </span>
-              </p>
-            </Card>
-          </div>
-        </ModalBody>
+        <ModalHandle/>
       </Modal>
       <div>
         <div className="parent">
-          <Button className="btn" color="primary" onClick={toggle}>
+          <Button className="btn linkbtn" color="primary" onClick={toggle}>
             <AiOutlinePlus size={30} />
           </Button>
         </div>

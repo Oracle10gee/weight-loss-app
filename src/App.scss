@@ -45,3 +45,61 @@ li {
     // right: 100px;
   }
 }
+
+.weightbtn {
+  width: 50% !important;
+  border-radius: 15px !important;
+  height: 5rem;
+  background-color: #fff !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+  border: none !important;
+}
+
+.savebutton {
+  width: 100%;
+  border-radius: 15px !important;
+  height: 3rem;
+  background-color: #7b66ff !important;
+  font-weight: 700 !important;
+
+
+}
+
+.links {
+  text-decoration: none !important;
+  color: #000 !important;
+}
+
+.cardlink {
+  transition: 0.3s ease-in;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+.linkbtn {
+  transition: 0.3s ease-out;
+}
+.linkbtn:hover {
+  transform: scale(1.04);
+}
+
+.cardclip {
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 17% 100%);
+}
+
+.weightheader {
+  & h1 {
+    font-weight: 800;
+    font-size: 6rem;
+  }
+}
+
+.addbtn {
+    transition: 0.5s ease-in-out;
+}
+.addbtn:hover {
+    transform: scale(1.06);
+    background-color: #7b66ff !important;
+}

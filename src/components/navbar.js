@@ -18,7 +18,7 @@ const NavBar = () => {
             </Link>
           </div>
           <div>
-            <Link to="/">
+            <Link to="/history">
               <CgMenuRight size={30} />
             </Link>
           </div>
