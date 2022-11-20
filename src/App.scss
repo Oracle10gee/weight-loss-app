@@ -54,6 +54,11 @@ li {
   color: #000000 !important;
   font-weight: 700 !important;
   border: none !important;
+
+  &:hover {
+    background-color: #7b66ff !important;
+    color: #ffffff !important;
+  }
 }
 
 .savebutton {
